@@ -1,0 +1,80 @@
+
+---
+
+# .gitignore
+
+```gitignore
+# --- OS / éditeurs ---
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+*.iml
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.dist/
+build/
+.eggs/
+.venv/
+.env
+.env.*
+.python-version
+
+# --- Notebooks / checkpoints ---
+.ipynb_checkpoints/
+
+# --- Logs / cache ---
+logs/
+*.log
+.cache/
+.tmp/
+tmp/
+
+# --- Données locales (non versionnées) ---
+data/
+outputs/
+downloads/
+raw/
+*.har
+*.db
+*.sqlite
+*.sqlite3
+
+# dumps volumineux (garde des échantillons dans /samples si besoin)
+*.json
+*.csv
+
+# mais conserve les schémas/échantillons si tu veux :
+# !database/*.sql
+# !samples/*.json
+# !samples/*.csv
+
+# --- Secrets / tokens ---
+*.pem
+*.key
+*.crt
+token*.json
+credentials*.json
+
+# --- Databricks / Spark ---
+*.dbc
+.derby/
+.metastore/
+spark-warehouse/
+
+# --- Node (si script front ou utilitaire) ---
+node_modules/
+package-lock.json
+
+# --- OS Windows ---
+desktop.ini
+
+# --- Images / rapports (gros PDF facultatifs) ---
+# (retire cette ligne si tu veux versionner le rapport)
+# *.pdf
